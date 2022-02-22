@@ -23,7 +23,7 @@ xkb_symbols "as_lat" {
     //         threequarters ] };
     //         plusminus ]	};
     //      ellipsis,            U0335 ] }; // … (ellipsis), isčerk(stroke)
-    //key <LWIN>	{ [  asciitilde,      grave,        acute,       apostrophe ] }; 
+    key <LWIN>	{ [  asciitilde,      grave,        acute,       apostrophe ] }; 
     key <TLDE>	{ [  asciitilde,      grave,        acute,       apostrophe ] }; 
     key <AE01>  { [      exclam,          1,        U0328,           degree ] }; // ! 1  ̨(ogonek) °(degree)
     key <AE02>  { [          at,          2,        U030C,         quotedbl ] }; // @ 2  ̌(haček/caron) "
@@ -147,7 +147,7 @@ xkb_symbols "as_cyr_std" {
     // TODO replace ligatures with with MULTIKEY SEQ if any
     // TODO add "<>" for slipping notation
     // TODO add "*" for markdown/ or may be develop own fotmat for cyrillic
-    //key <LWIN> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
+    key <LWIN> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
     key <TLDE> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
     key <AE01> { [            exclam,                 1, U0308,               UA67D ] }; // !(udivna) 1  ̈(dvotočje/trema) (pajerok)
     key <AE02> { [          quotedbl,                 2, U030F, U030B         ] }; // " 2  ̏(dvočašiś)   ̋ (dvostreco)

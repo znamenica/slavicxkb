@@ -1,0 +1,22 @@
+xkb_keymap {
+   xkb_keycodes  { include "evdev+aliases(qwerty)" };
+   xkb_types     { include "complete"	};
+   xkb_compat    {
+      include "complete"
+      include "ledscroll(group_lock)"
+   };
+   xkb_geometry  { include "pc(pc105)"	};
+
+   xkb_symbols   {
+      include "pc+psi(as_lat)+psi(as_cyr_std):2+inet(evdev)"
+      include "terminate(ctrl_alt_bksp)"
+      include "group(lctrl_toggle)"
+      include "nbsp(level2)"
+
+      modifier_map Shift       { Shift_L,      Shift_R   };
+      replace modifier_map Mod4          { Meta_L, Meta_R };
+      replace modifier_map Mod1          { Alt_L, Alt_R };
+      modifier_map Mod2          { Num_Lock };
+      modifier_map Mod3          { Mode_switch };
+   };
+};
