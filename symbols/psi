@@ -1,0 +1,141 @@
+partial alphanumeric_keys
+xkb_symbols "ns_lat" {
+    include "latin"
+
+    name[Group1]= "NeoSlavic Lat";
+
+    // TODO replace ligatures with with MULTIKEY SEQ if any
+    //    endash,       emdash ]	}; -- ---
+    //        rightsinglequotemark, U2022 ] };
+    //        rightarrow,        U2194 ]	};
+    //        copyright,   registered ]	};
+    //        doublelowquotemark, leftsinglequotemark ] };
+    //        brightdoublequotemark, leftdoublequotemark ] };
+    //questiondown
+    // uring
+    // notsign
+    // ’ 
+    // --
+    // U2030
+    //          U2248 ]	};
+    //         ssharp
+    //        onehalf,   logicaland ]	};
+    //         threequarters ] };
+    //         plusminus ]	};
+    //      ellipsis,            U0335 ] }; // … (ellipsis), isčerk(stroke)
+    key <LWIN>	{ [  asciitilde,      grave,        acute,       apostrophe ] }; 
+    key <AE01>  { [      exclam,          1,     EuroSign,           degree ] }; //
+    key <AE02>  { [    quotedbl,          2,           at,            U030C ] }; // haček (caron)
+    key <AE03>  { [       U0301,          3,   numbersign,            U0303 ] }; // acute (ostreco), circumflex (^)
+    key <AE04>  { [   semicolon,          4,       dollar,            U0306 ] }; // breve (kratco)
+    key <AE05>  { [     percent,          5,        U0303,            U030A ] }; // tilde (titlo), above ring (nadkolco)
+    key <AE06>  { [    question,          6,  asciicircum,            U0328 ] }; // ogonek
+    key <AE07>  { [   parenleft,          7,    ampersand,            U0300 ] }; // grave(čažiś)
+    key <AE08>  { [  parenright,          8,     asterisk,            U0307 ] }; // abovedot
+    key <AE09>  { [       colon,          9,  bracketleft,    guillemotleft ] };
+    key <AE10>  { [      period,          0, bracketright,   guillemotright ] };
+    key <AE11>	{ [       minus, underscore,        U030B,            U0304 ] }; // dvostreco, macron (nadčerk)
+    key <AE12>	{ [       equal,       plus,        U0308,            U0327 ] }; // dvokrapka (diaeresis), cedilla
+
+    key <AD01>  { [           q,          Q,      eogonek,          Eogonek ] };
+    key <AD02>  { [           w,          W,       scaron,           Scaron ] };
+    key <AD03>  { [           e,          E,       ecaron,           Ecaron ] };
+    key <AD04>  { [           r,          R,       racute,           Racute ] };
+    key <AD05>  { [           t,          T,       tcaron,           Tcaron ] };
+    key <AD06>  { [           y,          Y,       yacute,           Yacute ] };
+    key <AD07>  { [           u,          U,      uogonek,          Uogonek ] };
+    key <AD08>  { [           i,          I,       iacute,           Iacute ] };
+    key <AD09>  { [           o,          O,       ograve,           Ograve ] };
+    key <AD10>  { [           p,          P,       oacute,           Oacute ] };
+    key <AD11>	{ [ bracketleft,  braceleft,       uacute,           Uacute ] };
+    key <AD12>	{ [bracketright, braceright,       eacute,           Eacute ] };
+    key <BKSL>	{ [       slash,  backslash,          bar,          section ] };
+
+    key <AC01>  { [           a,          A,        aring,            Aring ] };
+    key <AC02>  { [           s,          S,       sacute,           Sacute ] };
+    key <AC03>  { [           d,          D,       dcaron,           Dcaron ] };
+    key <AC04>  { [           f,          F,      aogonek,          Aogonek ] };
+    key <AC05>  { [           g,          G,      dstroke,          Dstroke ] };
+    key <AC06>  { [           h,          H,       aacute,           Aacute ] };
+    key <AC07>  { [           j,          J,       zcaron,           Zcaron ] };
+    key <AC08>  { [           k,          K,       ccaron,           Ccaron ] };
+    key <AC09>  { [           l,          L,       lcaron,           Lcaron ] };
+    key <AC10>	{ [   semicolon,      colon,        U01EB,            U01EA ] }; // oogonek, Oogonek
+    key <AC11>	{ [  apostrophe,   quotedbl,       egrave,           Egrave ] };
+
+    key <AB01>  { [           z,          Z,       zacute,           Zacute ] };
+    key <AB02>  { [           x,          X,    zabovedot,        Zabovedot ] };
+    key <AB03>  { [           c,          C,       cacute,           Cacute ] };
+    key <AB04>  { [           v,          V,           ae,               AE ] };
+    key <AB05>  { [           b,          B,       rcaron,           Rcaron ] };
+    key <AB06>  { [           n,          N,       nacute,           Nacute ] };
+    key <AB07>  { [           m,          M,        schwa,            SCHWA ] };
+    key <AB08>  { [       slash,   multiply,         less,    lessthanequal ] };
+    key <AB09>  { [      period,   division,      greater, greaterthanequal ] };
+    key <AB10>  { [       comma, periodcentered,  lstroke,          Lstroke ] };
+
+    key <SPCE>	{ [       space,      space, nobreakspace,     nobreakspace ] };
+
+    include "level3(ralt_switch)"
+};
+
+xkb_symbols "as_cyr" {
+    name[Group1]= "AllSlavic Cyr";
+
+    // +percent
+    // TODO replace ligatures with with MULTIKEY SEQ if any
+    // TODO add "<>" for slipping notation
+    // TODO add "*" for markdown/ or may be develop own fotmat for cyrillic
+    key <LWIN> { [       Cyrillic_io,       Cyrillic_IO, Ukrainian_yi,        Ukrainian_YI         ] };
+    key <AE01> { [            exclam,                 1, UA67D,               UA67E                ] }; // pajerok, kavyka
+    key <AE02> { [          quotedbl,                 2, U0484,               braceleft            ] }; // kamora
+    key <AE03> { [             U0301,                 3, U0300,               braceright           ] }; // oxia (ostreco), varia (čažiś)
+    key <AE04> { [         semicolon,                 4, U04A9,               U04AA                ] }; // ҩ Ҩ
+    key <AE05> { [             U0487,                 5, U0486,               U0483                ] }; // pokryťe, psili, titlo
+    key <AE06> { [          question,                 6, U046D,               U046C                ] }; // ѭ Ѭ
+    key <AE07> { [         parenleft,                 7, U0477,               U0476                ] }; // ѷ Ѷ
+    key <AE08> { [        parenright,                 8, U0469,               U0468                ] }; // ѩ Ѩ
+    key <AE09> { [             colon,                 9, bracketleft,         guillemotleft        ] };
+    key <AE10> { [            period,                 0, bracketright,        guillemotright       ] };
+    key <AE11> { [             minus,        underscore, U047D,               U047C                ] }; // - _ ѽ Ѽ
+    key <AE12> { [             equal,              plus, U047F,               U047E                ] }; // = + ѿ Ѿ
+
+    key <AD01> { [             UA647,             UA646, Cyrillic_je,         Cyrillic_JE          ] }; // ꙇꙆјЈ
+    key <AD02> { [      Cyrillic_tse,      Cyrillic_TSE, Macedonia_dse,       Macedonia_DSE        ] }; // цЦѕЅꙡꙠꙅꙄ
+    key <AD03> { [        Cyrillic_u,        Cyrillic_U, UA64B, UA64A, Byelorussian_shortu, Byelorussian_SHORTU  ] }; // уУꙋꙊўЎ
+    key <AD04> { [       Cyrillic_ka,       Cyrillic_KA, U046F, U046E, Macedonia_kje,       Macedonia_KJE, U0481, U0480        ] }; // кКѯѮќЌҁҀ
+    key <AD05> { [       Cyrillic_ie,       Cyrillic_IE, UA64F,               UA64E                ] }; // еЕєЄѥѤѐЀ
+    key <AD06> { [       Cyrillic_en,       Cyrillic_EN, Cyrillic_nje,        Cyrillic_NJE         ] }; // нНњЊ
+    key <AD07> { [      Cyrillic_ghe,      Cyrillic_GHE, Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ] }; // гГґҐѓЃ
+    key <AD08> { [      Cyrillic_sha,      Cyrillic_SHA, Cyrillic_shcha,      Cyrillic_SHCHA       ] }; // шШщЩ
+    key <AD09> { [       Ukrainian_i,       Ukrainian_I, Ukrainian_yi,        Ukrainian_YI         ] }; // їЇіІ
+    key <AD10> { [       Cyrillic_ze,       Cyrillic_ZE, U045D,               U040D                ] }; // зЗꙁꙀꙃꙂ
+    key <AD11> { [       Cyrillic_ha,       Cyrillic_HA, U0453,               U0403                ] }; // хХѹѸ
+    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U046B,               U046A                ] }; // ꙏꙎѫѪѭѬ
+    key <BKSL> { [             slash,         backslash, bar,                 U0482                ] }; // / \ | ҂
+
+    key <AC01> { [       Cyrillic_ef,       Cyrillic_EF, U0473,               U0472                ] }; // ѳ Ѳ
+    key <AC02> { [     Cyrillic_yeru,     Cyrillic_YERU, Cyrillic_e,          Cyrillic_E           ] };
+    key <AC03> { [       Cyrillic_ve,       Cyrillic_VE, U0475,               U0474                ] }; // ѵ Ѵ
+    key <AC04> { [        Cyrillic_a,        Cyrillic_A, UA657,               UA656                ] }; // ꙗ Ꙗ
+    key <AC05> { [       Cyrillic_pe,       Cyrillic_PE, U0471,               U0470                ] }; // ѱ Ѱ
+    key <AC06> { [       Cyrillic_er,       Cyrillic_ER, U0479,               U0478                ] }; // (onuk), (ONUK)
+    key <AC07> { [        Cyrillic_o,        Cyrillic_O, U0461,               U0460                ] }; // ѡ Ѡ
+    key <AC08> { [       Cyrillic_el,       Cyrillic_EL, Cyrillic_lje,        Cyrillic_LJE         ] };
+    key <AC09> { [       Cyrillic_de,       Cyrillic_DE, Serbian_dje,         Serbian_DJE          ] };
+    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE, Serbian_tshe,        Serbian_TSHE         ] };
+    key <AC11> { [             U0463,             U0462, Ukrainian_ie,        Ukrainian_IE         ] }; // Ѣ ѣ ̵Є є
+
+    key <AB01> { [       Cyrillic_ya,       Cyrillic_YA, UA65B,               UA65A                ] }; // sredny jus,  SREDNY JUS
+    key <AB02> { [      Cyrillic_che,      Cyrillic_CHE, Cyrillic_dzhe,       Cyrillic_DZHE        ] };
+    key <AB03> { [       Cyrillic_es,       Cyrillic_ES, U046F,               U046E                ] }; // ѯ Ѯ
+    key <AB04> { [       Cyrillic_em,       Cyrillic_EM, U0465,               U0464                ] }; // ѥ Ѥ
+    key <AB05> { [        Cyrillic_i,        Cyrillic_I, Cyrillic_shorti,     Cyrillic_SHORTI      ] };
+    key <AB06> { [       Cyrillic_te,       Cyrillic_TE, UA64D,               UA64C                ] }; // ꙍ Ꙍ
+    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, U0467,               U0466                ] }; // small yus, SMALL YUS
+    key <AB08> { [       Cyrillic_be,       Cyrillic_BE, U047B,               U047A                ] }; // ѻ Ѻ
+    key <AB09> { [       Cyrillic_yu,       Cyrillic_YU, UA64B,               UA64A                ] }; // onik, ONIK
+    key <AB10> { [             comma,             U00B7, U10FB,               U2056                ] }; // · ҂ ჻ ⁖
+
+    include "level3(ralt_switch)"
+};
