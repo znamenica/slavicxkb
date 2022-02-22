@@ -8,39 +8,39 @@ xkb_keymap {
    xkb_geometry  { include "pc(pc105)"	};
 
    xkb_symbols   {
-      include "pc+psi(ns_lat)+psi(ns_cyr):2+inet(evdev)"
+      include "pc+psi(as_lat)+psi(as_cyr_std):2+inet(evdev)"
       include "terminate(ctrl_alt_bksp)"
       include "group(lctrl_toggle)"
       include "nbsp(level2)"
 
-      //modifier_map Lock        { Caps_Lock };
-      //modifier_map Control     { Control_L, Control_R };
-      modifier_map Shift       { Shift_L,      Shift_R   };
-      replace modifier_map Mod4          { Meta_L, Meta_R };
-      replace modifier_map Mod1          { Alt_L, Alt_R };
-      modifier_map Mod2          { Num_Lock };
-      modifier_map Mod3          { Mode_switch                   };
-      // modifier_map Mod5          { Scroll_Lock                   };
-
-      replace key <TLDE> { [ Control_L, Control_R, Meta_L, Meta_R ] };
-      replace key <TAB> { [ Shift_L, Shift_R ] };
-      replace key <CAPS> {
-         type[Group1]="FOUR_LEVEL",
-         symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ]
-      };
-      // <LALT> as Mod1 -> <LFSH>
-      // Hyper_L, Super_L should be ignored
-      // replace key <LFSH> { [ Alt_L, Alt_R, Meta_L, Meta_R ] };
-      replace key <LFSH> { [ Meta_L, Meta_L ] };
-      // replace key <LFSH> { [ Alt_L, Hyper_L, Super_L, Meta_L ] };
-      // replace key <LFSH> { [ Hyper_L, Hyper_L, Hyper_L, Hyper_L ] };
-      // replace key <LFSH> { [ Hyper_L, Super_L, Meta_L, Multi_key ] };
-      replace key <LCTL> { [ ISO_First_Group, ISO_Last_Group, ISO_Next_Group, ISO_Group_Latch ] };
-      replace key <RALT> { [ Shift_R, Shift_L, Meta_R, Meta_L ] };
-      replace key <RTSH> { [ Tab, ISO_Left_Tab, ISO_Left_Tab, ISO_Left_Tab] };
-      replace key <RCTL> { [ Control_R, Control_L, Meta_R, Meta_L ] };
-
-
+//      //modifier_map Lock        { Caps_Lock };
+//      //modifier_map Control     { Control_L, Control_R };
+//      modifier_map Shift       { Shift_L,      Shift_R   };
+//      replace modifier_map Mod4          { Meta_L, Meta_R };
+//      replace modifier_map Mod1          { Alt_L, Alt_R };
+//      modifier_map Mod2          { Num_Lock };
+//      modifier_map Mod3          { Mode_switch                   };
+//      // modifier_map Mod5          { Scroll_Lock                   };
+//
+//      replace key <TLDE> { [ Control_L, Control_R, Meta_L, Meta_R ] };
+//      replace key <TAB> { [ Shift_L, Shift_R ] };
+//      replace key <CAPS> {
+//         type[Group1]="FOUR_LEVEL",
+//         symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ]
+//      };
+//      // <LALT> as Mod1 -> <LFSH>
+//      // Hyper_L, Super_L should be ignored
+//      // replace key <LFSH> { [ Alt_L, Alt_R, Meta_L, Meta_R ] };
+//      replace key <LFSH> { [ Meta_L, Meta_L ] };
+//      // replace key <LFSH> { [ Alt_L, Hyper_L, Super_L, Meta_L ] };
+//      // replace key <LFSH> { [ Hyper_L, Hyper_L, Hyper_L, Hyper_L ] };
+//      // replace key <LFSH> { [ Hyper_L, Super_L, Meta_L, Multi_key ] };
+//      replace key <LCTL> { [ ISO_First_Group, ISO_Last_Group, ISO_Next_Group, ISO_Group_Latch ] };
+//      replace key <RALT> { [ Shift_R, Shift_L, Meta_R, Meta_L ] };
+//      replace key <RTSH> { [ Tab, ISO_Left_Tab, ISO_Left_Tab, ISO_Left_Tab] };
+//      replace key <RCTL> { [ Control_R, Control_L, Meta_R, Meta_L ] };
+//
+//
       // key <LALT> { [ Alt_L, Meta_L ] };
       // key <RALT> { type[Group1] = "TWO_LEVEL",
       //             symbols[Group1] = [ Alt_R, Meta_R ] };
