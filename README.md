@@ -5,7 +5,8 @@ All slavic XKB layouts.
 Change folder to ```$HOME/.config/xkb```, with creation if no, and chechout the repo into it.
 
 ```sh
-git clone git@github.com:znamenica/slavicxkb.git
+cd ~/.config
+git clone git@github.com:znamenica/slavicxkb.git xkb
 ```
 
 ## Usage
