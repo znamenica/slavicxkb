@@ -14,7 +14,7 @@ xkb_symbols "as_lat" {
     //questiondown
     // uring
     // notsign
-    // ’ 
+    // ’
     // --
     // U2030
     //          U2248 ]	};
@@ -23,8 +23,8 @@ xkb_symbols "as_lat" {
     //         threequarters ] };
     //         plusminus ]	};
     //      ellipsis,            U0335 ] }; // … (ellipsis), isčerk(stroke)
-    //key <LWIN>	{ [  asciitilde,      grave,        acute,       apostrophe ] }; 
-    key <TLDE>	{ [  asciitilde,      grave,        acute,       apostrophe ] }; 
+    key <LWIN>	{ [  asciitilde,      grave,        acute,       apostrophe ] };
+    //key <TLDE>	{ [  asciitilde,      grave,        acute,       apostrophe ] };
     key <AE01>  { [      exclam,          1,        U0328,           degree ] }; // ! 1  ̨(ogonek) °(degree)
     key <AE02>  { [          at,          2,        U030C,         quotedbl ] }; // @ 2  ̌(haček/caron) "
     key <AE03>  { [       U0301,          3,   numbersign,  dead_circumflex ] }; // ́ (ostreco/acute) 3 #   ̂(circumflex)
@@ -50,7 +50,7 @@ xkb_symbols "as_lat" {
     key <AD10>  { [           p,          P,       igrave,           Igrave ] }; // p P ì Ì
     key <AD11>	{ [ bracketleft,  braceleft,       eacute,           Eacute ] }; // [ { é É
     key <AD12>	{ [bracketright, braceright,       uacute,           Uacute ] }; // ] } ú Ú
-    key <BKSL>	{ [   backslash,        bar,       ograve,           Ograve ] }; // \ | ò Ò
+    key <BKSL>	{ [       slash,        bar,       ograve,           Ograve ] }; // \ | ò Ò
 
     key <AC01>  { [           a,          A,        aring,            Aring ] }; // a A å Å
     key <AC02>  { [           s,          S,       scaron,           Scaron ] }; // s S š Š
@@ -73,7 +73,7 @@ xkb_symbols "as_lat" {
     key <AB07>  { [           m,          M,       ncaron,           Ncaron ] }; // m M ň Ň
     key <AB08>  { [       comma,       less,       agrave,           Agrave ] }; // , < à À
     key <AB09>  { [      period,    greater,       ugrave,           Ugrave ] }; // . > ù Ù
-    key <AB10>  { [       slash, periodcentered,   egrave,           Egrave ] }; // / · è È
+    key <AB10>  { [   backslash, periodcentered,   egrave,           Egrave ] }; // / · è È
 
     key <SPCE>	{ [       space,      space, nobreakspace,     nobreakspace ] };
 
@@ -97,7 +97,7 @@ xkb_symbols "as_lat" {
 //    key <AE07> { [         parenleft,                 7, U0485,               U04A9  ] }; // ((leva otložna) 7  ҅(gusteco) ҩ
 //    key <AE08> { [        parenright,                 8, U0486,               U04BD  ] }; // )(prava otložna) 8  ҆(zvateľco) ҽ
 //    key <AE09> { [             colon,                 9, U0487, guillemotleft        ] }; // : 9  ҇(pokryťe) «
-//    key <AE10> { [            period,                 0, UA66F, guillemotright       ] }; // . 0  ꙯(vzmet) 
+//    key <AE10> { [            period,                 0, UA66F, guillemotright       ] }; // . 0  ꙯(vzmet)
 //    key <AE11> { [             minus,        underscore, bracketleft,         braceleft            ] }; // - _ [(leva vměstna) {
 //    key <AE12> { [             equal,              plus, bracketright,        braceright           ] }; // = + ](prava vměstna) }
 //
@@ -124,7 +124,7 @@ xkb_symbols "as_lat" {
 //    key <AC07> { [        Cyrillic_o,        Cyrillic_O, U0461,               U0460, UA64D, UA64C                ] }; // оОѡѠꙍꙌ
 //    key <AC08> { [       Cyrillic_el,       Cyrillic_EL, Cyrillic_lje,        Cyrillic_LJE, UA665, UA664         ] }; // лЛљЉꙥꙤ
 //    key <AC09> { [       Cyrillic_de,       Cyrillic_DE, Serbian_dje,         Serbian_DJE, UA663, UA662          ] }; // дДꙉꙈꙣꙢ
-//    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE, Serbian_tshe,        Serbian_TSHE         ] }; // жЖҗҖ
+//    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE, Serbian_dzhe,        Serbian_DZHE         ] }; // жЖҗҖ
 //    key <AC11> { [             U0463,             U0462, U0511, U0510, UA653, UA652         ] }; // ѣѢԑԐꙓꙒ
 //
 //    key <AB01> { [       Cyrillic_ya,       Cyrillic_YA, UA657,               UA656                ] }; // яЯꙗꙖ
@@ -147,8 +147,8 @@ xkb_symbols "as_cyr_std" {
     // TODO replace ligatures with with MULTIKEY SEQ if any
     // TODO add "<>" for slipping notation
     // TODO add "*" for markdown/ or may be develop own fotmat for cyrillic
-    //key <LWIN> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
-    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
+    key <LWIN> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
+    //key <TLDE> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
     key <AE01> { [            exclam,                 1, U0308,               UA67D ] }; // !(udivna) 1  ̈(dvotočje/trema) (pajerok)
     key <AE02> { [          quotedbl,                 2, U030F, U030B         ] }; // " 2  ̏(dvočašiś)   ̋ (dvostreco)
     key <AE03> { [             U0301,                 3, U0300, U2116                          ] }; // ́ (ostreco) 3  ̀(čažiś) №
@@ -158,7 +158,7 @@ xkb_symbols "as_cyr_std" {
     key <AE07> { [         parenleft,                 7, U0485,               U04A9  ] }; // ((leva otložna) 7  ҅(gusteco) ҩ
     key <AE08> { [        parenright,                 8, U0486,               U04BD  ] }; // )(prava otložna) 8  ҆(zvateľco) ҽ
     key <AE09> { [             colon,                 9, U0487, guillemotleft        ] }; // : 9  ҇(pokryťe) «
-    key <AE10> { [            period,                 0, UA66F, guillemotright       ] }; // . 0  ꙯(vzmet) 
+    key <AE10> { [            period,                 0, UA66F, guillemotright       ] }; // . 0  ꙯(vzmet)
     key <AE11> { [             minus,        underscore, bracketleft,         braceleft            ] }; // - _ [(leva vměstna) {
     key <AE12> { [             equal,              plus, bracketright,        braceright           ] }; // = + ](prava vměstna) }
 
