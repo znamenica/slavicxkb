@@ -26,10 +26,10 @@ xkb_symbols "as_lat" {
     key <LWIN>	{ [  asciitilde,      grave,        acute,       apostrophe ] };
     //key <TLDE>	{ [  asciitilde,      grave,        acute,       apostrophe ] };
     key <AE01>  { [      exclam,          1,        U0328,           degree ] }; // ! 1  ̨(ogonek) °(degree)
-    key <AE02>  { [          at,          2,        U030C,         quotedbl ] }; // @ 2  ̌(haček/caron) "
+    key <AE02>  { [    quotedbl,          2,           at,            U0303 ] }; // " @ 2  ̃(tilde)
     key <AE03>  { [       U0301,          3,   numbersign,  dead_circumflex ] }; // ́ (ostreco/acute) 3 #   ̂(circumflex)
     key <AE04>  { [       U0300,          4,       dollar,        semicolon ] }; //   ̀(grave/čašiś) 4 $ ;
-    key <AE05>  { [     percent,          5,        U0307,            U0303 ] }; // % 5  ̇(abovedot/krapka)  ̃(tilde)
+    key <AE05>  { [     percent,          5,        U030C,            U0307 ] }; // % 5  ̌(haček/caron)  ̇(abovedot/krapka)
     key <AE06>  { [    question,          6,  asciicircum,            U030A ] }; // ? 6 ^  ̊(abovering/nadkolco)
     key <AE07>  { [   parenleft,          7,    ampersand,            U0306 ] }; // ( 7 &  ̆(breve/kratka)
     key <AE08>  { [  parenright,          8,     asterisk,            U0308 ] }; // ) 8 *  ̈(diaeresis/dvokrapka)
