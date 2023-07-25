@@ -34,7 +34,7 @@ xkb_symbols "as_lat" {
     key <AE07>  { [   parenleft,          7,    ampersand,            U0306 ] }; // ( 7 &  ̆(breve/kratka)
     key <AE08>  { [  parenright,          8,     asterisk,            U0308 ] }; // ) 8 *  ̈(diaeresis/dvokrapka)
     key <AE09>  { [       colon,          9,       zacute,           Zacute ] }; // : 9 ź Ź
-    key <AE10>  { [      period,          0,        U0131,          section ] }; // . 0 ı §
+    key <AE10>  { [      period,          0,       yacute,           Yacute ] }; // . 0 ý Ý
     key <AE11>	{ [       minus, underscore,        U030B,            U0304 ] }; // - _  ̋(dvostreco)  ̄(macron/nadčerk)
     key <AE12>	{ [       equal,       plus,        U030F,            U0327 ] }; // = +  ̏(dvočašiś)  ̧(cedilla)
 
@@ -43,7 +43,7 @@ xkb_symbols "as_lat" {
     key <AD03>  { [           e,          E,       ecaron,           Ecaron ] }; // e E ě Ě
     key <AD04>  { [           r,          R,       rcaron,           Rcaron ] }; // r R ř Ř
     key <AD05>  { [           t,          T,       tcaron,           Tcaron ] }; // t T ť Ť
-    key <AD06>  { [           y,          Y,       yacute,           Yacute ] }; // y Y ý Ý
+    key <AD06>  { [           y,          Y,       U1EF7,             U1EF6 ] }; // y Y ỷ Ỷ
     key <AD07>  { [           u,          U,      uogonek,          Uogonek ] }; // u U ų Ų
     key <AD08>  { [           i,          I,      iogonek,          Iogonek ] }; // i I į Į
     key <AD09>  { [           o,          O,        U01EB,            U01EA ] }; // o O ǫ Ǫ
@@ -54,9 +54,9 @@ xkb_symbols "as_lat" {
 
     key <AC01>  { [           a,          A,        aring,            Aring ] }; // a A å Å
     key <AC02>  { [           s,          S,       scaron,           Scaron ] }; // s S š Š
-    key <AC03>  { [           d,          D,       dcaron,           Dcaron ] }; // d D ď Ď
+    key <AC03>  { [           d,          D,       dstroke,           Dstroke ] }; // d D đ Đ
     key <AC04>  { [           f,          F,      aogonek,          Aogonek ] }; // f F ą Ą
-    key <AC05>  { [           g,          G,       gcaron,           Gcaron ] }; // g G ǧ Ǧ
+    key <AC05>  { [           g,          G,       dcaron,           Dcaron ] }; // g G ď Ď
     key <AC06>  { [           h,          H,        uring,            Uring ] }; // h H ů Ů
     key <AC07>  { [           j,          J,       lacute,           Lacute ] }; // j J ĺ Ĺ
     key <AC08>  { [           k,          K,      lstroke,          Lstroke ] }; // k K ł Ł
@@ -151,18 +151,18 @@ xkb_symbols "as_cyr_std" {
     //key <TLDE> { [       Cyrillic_io,       Cyrillic_IO, UA64F, UA64E         ] }; // ёЁꙏꙎ
     key <AE01> { [            exclam,                 1, U0308,               UA67D ] }; // !(udivna) 1  ̈(dvotočje/trema) (pajerok)
     key <AE02> { [          quotedbl,                 2, U030F, U030B         ] }; // " 2  ̏(dvočašiś)   ̋ (dvostreco)
-    key <AE03> { [             U0301,                 3, U0300, U2116                          ] }; // ́ (ostreco) 3  ̀(čažiś) №
-    key <AE04> { [         semicolon,                 4, U0484,               None ] }; // ; 4  ҄(oblačko)
-    key <AE05> { [             percent,                 5, U0483,             UA67C ] }; // % 5  ҃(titlo) (kavyka)
-    key <AE06> { [          question,                 6, U0306, Greek_alpha ] }; // ? 6  ̆(kratka) α
-    key <AE07> { [         parenleft,                 7, U0485,               U04A9  ] }; // ((leva otložna) 7  ҅(gusteco) ҩ
-    key <AE08> { [        parenright,                 8, U0486,               U04BD  ] }; // )(prava otložna) 8  ҆(zvateľco) ҽ
-    key <AE09> { [             colon,                 9, U0487, guillemotleft        ] }; // : 9  ҇(pokryťe) «
-    key <AE10> { [            period,                 0, UA66F, guillemotright       ] }; // . 0  ꙯(vzmet)
+    key <AE03> { [             U0301,                 3, U0300,               U0483                ] }; // ́ (ostreco) 3  ̀(čažiś)  ҃(titlo)
+    key <AE04> { [         semicolon,                 4, U0484,               UA67C                ] }; // ; 4  ҄(oblačko) (kavyka)
+    key <AE05> { [           percent,                 5, U0465,               U0464                ] }; // % 5 ѥ Ѥ
+    key <AE06> { [          question,                 6, UA653,               UA652                ] }; // ? 6 ꙓ Ꙓ
+    key <AE07> { [         parenleft,                 7, U0485,               None                 ] }; // ((leva otložna) 7  ҅(gusteco)
+    key <AE08> { [        parenright,                 8, U0486,               U0306                ] }; // )(prava otložna) 8  ҆(zvateľco)  ̆(kratka)
+    key <AE09> { [             colon,                 9, U0487,               guillemotleft        ] }; // : 9  ҇(pokryťe) «
+    key <AE10> { [            period,                 0, UA66F,               guillemotright       ] }; // . 0  ꙯(vzmet) »
     key <AE11> { [             minus,        underscore, bracketleft,         braceleft            ] }; // - _ [(leva vměstna) {
     key <AE12> { [             equal,              plus, bracketright,        braceright           ] }; // = + ](prava vměstna) }
 
-    key <AD01> { [             UA647,             UA646, Cyrillic_je,         Cyrillic_JE          ] }; // ꙇꙆјЈ
+    key <AD01> { [       Cyrillic_je,       Cyrillic_JE, UA647,               UA646                ] }; // јЈꙇꙆ
     key <AD02> { [      Cyrillic_tse,      Cyrillic_TSE, Macedonia_dse,       Macedonia_DSE        ] }; // цЦѕЅ
     key <AD03> { [        Cyrillic_u,        Cyrillic_U, UA64B, UA64A  ] }; // уУꙋꙊ
     key <AD04> { [       Cyrillic_ka,       Cyrillic_KA, U046F, U046E        ] }; // кКѯѮ
@@ -170,10 +170,10 @@ xkb_symbols "as_cyr_std" {
     key <AD06> { [       Cyrillic_en,       Cyrillic_EN, Cyrillic_nje,        Cyrillic_NJE         ] }; // нНњЊ
     key <AD07> { [      Cyrillic_ghe,      Cyrillic_GHE, Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ] }; // гГґҐ
     key <AD08> { [      Cyrillic_sha,      Cyrillic_SHA, Cyrillic_shcha,      Cyrillic_SHCHA       ] }; // шШщЩ
-    key <AD09> { [       Ukrainian_yi,        Ukrainian_YI, Ukrainian_i,       Ukrainian_I         ] }; // їЇіІ
+    key <AD09> { [       Ukrainian_i,       Ukrainian_I, Ukrainian_yi,        Ukrainian_YI         ] }; // іІїЇ
     key <AD10> { [       Cyrillic_ze,       Cyrillic_ZE, UA641, UA640   ] }; // зЗꙁꙀ
     key <AD11> { [       Cyrillic_ha,       Cyrillic_HA, U0479,               U0478                ] }; // хХѹѸ
-    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U046B,               U046A   ] }; // ꙏꙎѫѪ
+    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U046B,               U046A   ] }; // ъЪѫѪ
     key <BKSL> { [             slash,         backslash, bar,                 U0482                ] }; // / \ | ҂(tyseča)
 
     key <AC01> { [       Cyrillic_ef,       Cyrillic_EF, U0473,               U0472                ] }; // фФѳѲ
@@ -185,7 +185,7 @@ xkb_symbols "as_cyr_std" {
     key <AC07> { [        Cyrillic_o,        Cyrillic_O, U0461,               U0460 ] }; // оОѡѠ
     key <AC08> { [       Cyrillic_el,       Cyrillic_EL, Cyrillic_lje,        Cyrillic_LJE ] }; // лЛљЉ
     key <AC09> { [       Cyrillic_de,       Cyrillic_DE, UA649,      UA648    ] }; // дДꙉꙈ
-    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE, Serbian_tshe,        Serbian_TSHE         ] }; // жЖҗҖ
+    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE, U0497,               U0496         ] }; // жЖҗҖ
     key <AC11> { [             U0463,             U0462, U0511, U0510 ] }; // ѣѢԑԐ
 
     key <AB01> { [       Cyrillic_ya,       Cyrillic_YA, UA657,               UA656                ] }; // яЯꙗꙖ
@@ -199,7 +199,7 @@ xkb_symbols "as_cyr_std" {
     key <AB09> { [       Cyrillic_yu,       Cyrillic_YU, UA65B,               UA65A ] }; // юЮꙛꙚ
     key <AB10> { [             comma,             U00B7, U10FB,               U2056                ] }; // , · ჻ ⁖
 
-    key <SPCE> { [       space,      space, nobreakspace,     nobreakspace ] };
+    key <SPCE> { [             space,        underscore, nobreakspace,        nobreakspace         ] };
 
     include "level3(ralt_switch)"
 };
