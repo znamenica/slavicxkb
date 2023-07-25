@@ -23,20 +23,20 @@ xkb_symbols "as_lat" {
     //         threequarters ] };
     //         plusminus ]	};
     //      ellipsis,            U0335 ] }; // … (ellipsis), isčerk(stroke)
-    key <LWIN>	{ [  asciitilde,      grave,        acute,       apostrophe ] };
     //key <TLDE>	{ [  asciitilde,      grave,        acute,       apostrophe ] };
-    key <AE01>  { [      exclam,          1,        U0328,           degree ] }; // ! 1  ̨(ogonek) °(degree)
+    key <LWIN>	 { [  asciitilde,      grave,        acute,       apostrophe ] };
+    key <AE01>  { [      exclam,          1,        U0131,           degree ] }; // ! 1 ı °(degree)
     key <AE02>  { [    quotedbl,          2,           at,            U0303 ] }; // " @ 2  ̃(tilde)
     key <AE03>  { [       U0301,          3,   numbersign,  dead_circumflex ] }; // ́ (ostreco/acute) 3 #   ̂(circumflex)
     key <AE04>  { [       U0300,          4,       dollar,        semicolon ] }; //   ̀(grave/čašiś) 4 $ ;
-    key <AE05>  { [     percent,          5,        U030C,            U0307 ] }; // % 5  ̌(haček/caron)  ̇(abovedot/krapka)
+    key <AE05>  { [     percent,          5,        U0306,            U0307 ] }; // % 5   ̆(breve/kratka)  ̇(abovedot/krapka)
     key <AE06>  { [    question,          6,  asciicircum,            U030A ] }; // ? 6 ^  ̊(abovering/nadkolco)
-    key <AE07>  { [   parenleft,          7,    ampersand,            U0306 ] }; // ( 7 &  ̆(breve/kratka)
+    key <AE07>  { [   parenleft,          7,    ampersand,            U0304 ] }; // ( 7 &  ̄(macron/nadčerk)
     key <AE08>  { [  parenright,          8,     asterisk,            U0308 ] }; // ) 8 *  ̈(diaeresis/dvokrapka)
     key <AE09>  { [       colon,          9,       zacute,           Zacute ] }; // : 9 ź Ź
     key <AE10>  { [      period,          0,       yacute,           Yacute ] }; // . 0 ý Ý
-    key <AE11>	{ [       minus, underscore,        U030B,            U0304 ] }; // - _  ̋(dvostreco)  ̄(macron/nadčerk)
-    key <AE12>	{ [       equal,       plus,        U030F,            U0327 ] }; // = +  ̏(dvočašiś)  ̧(cedilla)
+    key <AE11>  { [       minus, underscore,        U0328,            U030B ] }; // - _  ̨(ogonek)  ̋(dvostreco)
+    key <AE12>	 { [       equal,       plus,        U030C,            U030F ] }; // = +  ̌(haček/caron)  ̏(dvočašiś)
 
     key <AD01>  { [           q,          Q,      eogonek,          Eogonek ] }; // q Q ę Ę
     key <AD02>  { [           w,          W,       sacute,           Sacute ] }; // w W ś Ś
