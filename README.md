@@ -18,6 +18,15 @@ xkbcomp -I${HOME}/.config/xkb -R${HOME}/.config/xkb keymap/usual ${DISPLAY}
 ```
 
 If you want to use more useful but unhabitual layout, which widely use the pinky finger, just use:
+This layout the follwing mapping replacements:
+
+```
+Ctrl -> ~
+RightShift -> Tab
+Tab -> RightShift
+~ -> Win
+LeftAlt -> CapsLock
+```
 
 ```sh
 xkbcomp -I${HOME}/.config/xkb -R${HOME}/.config/xkb keymap/unhabitual ${DISPLAY}
