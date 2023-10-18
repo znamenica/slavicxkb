@@ -20,5 +20,5 @@ xkbcomp -I${HOME}/.config/xkb -R${HOME}/.config/xkb keymap/usual ${DISPLAY}
 If you want to use more useful but unhabitual layout, which widely use the pinky finger, just use:
 
 ```sh
-xkbcomp -I${HOME}/.config/xkb -R${HOME}/.config/xkb keymap/useful ${DISPLAY}
+xkbcomp -I${HOME}/.config/xkb -R${HOME}/.config/xkb keymap/unhabitual ${DISPLAY}
 ```
